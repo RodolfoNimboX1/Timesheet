@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timesheet</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!--CSS style-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!--Header Section-->
+    <!-- Jumbotron -->
+    <div class="jumbotron" style="background-color: black !important;">
+            <h1 class="text-center" style="color: white !important;">Employee Data Management</h1>
+            <h3 class="text-center" style="color: white !important;">A Comprehensive Directory of Employee Billable Hours</h3>
+          </div>
+
+    <!--Current Employees-->
+    <div class="row" id="employees-table">
+        <h3>Employees</h3>
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                      <th>Company</th>
+                      <th>Contact</th>
+                      <th>Country</th>
+                    </tr>
+                </thead>    
+                    <tr>
+                      <td>Alfreds Futterkiste</td>
+                      <td>Maria Anders</td>
+                      <td>Germany</td>
+                    </tr>
+                    <tr>
+                      <td>Centro comercial Moctezuma</td>
+                      <td>Francisco Chang</td>
+                      <td>Mexico</td>
+                    </tr>
+                    <tr>
+                      <td>Ernst Handel</td>
+                      <td>Roland Mendel</td>
+                      <td>Austria</td>
+                    </tr>
+                    <tr>
+                      <td>Island Trading</td>
+                      <td>Helen Bennett</td>
+                      <td>UK</td>
+                    </tr>
+                    <tr>
+                      <td>Laughing Bacchus Winecellars</td>
+                      <td>Yoshi Tannamuri</td>
+                      <td>Canada</td>
+                    </tr>
+                    <tr>
+                      <td>Magazzini Alimentari Riuniti</td>
+                      <td>Giovanni Rovelli</td>
+                      <td>Italy</td>
+                    </tr>
+                  </table>
+
+    </div>
+
+    <!--Add Employee-->
+    <div class="row" id="new-employee">
+
+            <!-- Sign-Up Card-->
+            <div class="col-lg-6">
+              <div class="card card-default">
+                <div class="card-heading">
+                  <h3 class="card-title">New Employee Sign Up</h3>
+                </div>
+                <div class="card-body">
+      
+                  <!-- Sign-up Form (note the various input "types")-->
+      
+                  <form role="form">
+                    <div class="form-group row">
+                      <label for="name-input">Name:</label>
+                      <input class="form-control" id="name-input" type="text">
+                    </div>
+                    <div class="form-group row">
+                      <label for="role-input">Role:</label>
+                      <input class="form-control" id="email-input" type="text">
+                    </div>
+                    <div class="form-group row">
+                      <label for="date-input">Start Date:</label>
+                      <input class="form-control" id="date-input" type="date">
+                    </div>
+                    <div class="form-group row">
+                            <label for="rate-input">Monthly Rate:</label>
+                            <input class="form-control" id="rate-input" type="number">
+                          </div>
+                    <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+                  </form>
+      
+                </div>
+      
+              </div>
+      
+            </div>
+      
+          </div>
+
+</div>
+
+    
+
+    <!--Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="javafile.js"></script>
+</body>
+</html>
